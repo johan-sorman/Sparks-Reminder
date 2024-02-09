@@ -80,4 +80,8 @@ async def daily_message():
 
 schedule.every().sunday.at("15:00").do(lambda: asyncio.create_task(daily_message()))
 
+#############################################################################
+## Start the bot
+#############################################################################
+
 client.run(TOKEN)
